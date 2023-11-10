@@ -180,6 +180,45 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "Player in menu",
+            "id": "6ac3b6aa-53b6-40f7-9818-91840eff3f5d",
+            "actions": [
+                {
+                    "name": "Start",
+                    "type": "Button",
+                    "id": "4dbe5b0c-b998-4354-be33-6e94fd224398",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "16b7e5e4-d058-43d6-afe6-a7114134cb7d",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Start",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "afd85d88-8c1f-4bdf-a752-fbd421ca4cbe",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and mouse",
+                    "action": "Start",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
