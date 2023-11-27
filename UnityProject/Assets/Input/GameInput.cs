@@ -215,6 +215,15 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Directions"",
+                    ""type"": ""Value"",
+                    ""id"": ""7a80aa09-6a1c-4321-8fb5-e1fb5d8fa7b7"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -239,6 +248,138 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""action"": ""Start"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1353d611-c4f4-42ff-87ba-6c8e8ca070f8"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Directions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""66a1301c-8171-4c59-8f21-74fd54095604"",
+                    ""path"": ""<Gamepad>/dpad"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Directions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""b6833651-0ee4-4b45-8e4b-8605e34f7e29"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Directions"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""02e0d249-a833-447c-b078-282f2ac5e4f9"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Directions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""fd85d8ae-3196-461d-945b-8518edf6f395"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Directions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""a40ee91c-2417-4329-b6f9-4de555542e28"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Directions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""fb3c1375-72c4-4347-9663-cadbed9b1eb3"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Directions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Directionals Keyboard"",
+                    ""id"": ""20939a93-2f48-486a-8094-61a7dc86a156"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Directions"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""40159c07-8aa6-477d-bede-89de8c419df1"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Directions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""c0a716d5-6fc7-4bad-9dd9-1329aace0185"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Directions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""9fbe5c77-dab0-4369-8ccc-570aea59fae4"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Directions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""b2db0ed9-6a90-4984-978f-490e2ccf6d68"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Directions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -280,6 +421,7 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
         // Player in menu
         m_Playerinmenu = asset.FindActionMap("Player in menu", throwIfNotFound: true);
         m_Playerinmenu_Start = m_Playerinmenu.FindAction("Start", throwIfNotFound: true);
+        m_Playerinmenu_Directions = m_Playerinmenu.FindAction("Directions", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -396,11 +538,13 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Playerinmenu;
     private List<IPlayerinmenuActions> m_PlayerinmenuActionsCallbackInterfaces = new List<IPlayerinmenuActions>();
     private readonly InputAction m_Playerinmenu_Start;
+    private readonly InputAction m_Playerinmenu_Directions;
     public struct PlayerinmenuActions
     {
         private @GameInput m_Wrapper;
         public PlayerinmenuActions(@GameInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Start => m_Wrapper.m_Playerinmenu_Start;
+        public InputAction @Directions => m_Wrapper.m_Playerinmenu_Directions;
         public InputActionMap Get() { return m_Wrapper.m_Playerinmenu; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -413,6 +557,9 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
             @Start.started += instance.OnStart;
             @Start.performed += instance.OnStart;
             @Start.canceled += instance.OnStart;
+            @Directions.started += instance.OnDirections;
+            @Directions.performed += instance.OnDirections;
+            @Directions.canceled += instance.OnDirections;
         }
 
         private void UnregisterCallbacks(IPlayerinmenuActions instance)
@@ -420,6 +567,9 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
             @Start.started -= instance.OnStart;
             @Start.performed -= instance.OnStart;
             @Start.canceled -= instance.OnStart;
+            @Directions.started -= instance.OnDirections;
+            @Directions.performed -= instance.OnDirections;
+            @Directions.canceled -= instance.OnDirections;
         }
 
         public void RemoveCallbacks(IPlayerinmenuActions instance)
@@ -463,5 +613,6 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
     public interface IPlayerinmenuActions
     {
         void OnStart(InputAction.CallbackContext context);
+        void OnDirections(InputAction.CallbackContext context);
     }
 }
