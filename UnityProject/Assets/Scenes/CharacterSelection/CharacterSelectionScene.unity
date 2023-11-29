@@ -402,6 +402,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2223382146171921305, guid: 53cc27a011ab6f84d8be599c764c59a7, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223382146171921305, guid: 53cc27a011ab6f84d8be599c764c59a7, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223382146171921305, guid: 53cc27a011ab6f84d8be599c764c59a7, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2996969715111224350, guid: 53cc27a011ab6f84d8be599c764c59a7, type: 3}
       propertyPath: m_Name
       value: GameCharacter1
