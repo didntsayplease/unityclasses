@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:VisualElement name="Header" style="flex-basis: 80%;">
+            <ui:VisualElement name="GameLogo" style="background-image: url(&apos;project://database/Assets/Images/Logo.png?fileID=21300000&amp;guid=8867ebb6f0e420946a8d3fd2f5e6c246&amp;type=3#Logo&apos;); -unity-background-scale-mode: scale-to-fit; height: 130px; margin-top: 6px; top: 60px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Footer" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Press start or enter button to start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Message" style="color: rgb(66, 255, 76); -unity-font-style: bold; font-size: 45px; -unity-text-align: upper-center; white-space: normal; flex-grow: 1; text-shadow: 8.3px 4.2px 0 rgba(0, 0, 0, 0.69);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
